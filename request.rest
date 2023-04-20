@@ -1,0 +1,34 @@
+GET http://localhost:5005/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJVc2UiLCJlbWFpbCI6InVzZUBnbWFpbC5jb20iLCJpYXQiOjE2Nzg4NzI2ODcsImV4cCI6MTY3ODg3MjcwMn0.RogPYdKRMUz6DeiZDwWtA9xcPEEYLHIsMmdrD9xMmgA
+
+###
+GET http://localhost:3000/api/users
+
+###
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "use@use.use",
+    "password": "1sampai8"
+}
+
+###
+GET http://localhost:5005/token
+
+###
+DELETE  http://localhost:3000/api/users/2
+
+
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "fullname": "fullname update",
+    "email": "use@use.use update",
+    "password": "87654321",
+    "roleId": 2
+}
+
